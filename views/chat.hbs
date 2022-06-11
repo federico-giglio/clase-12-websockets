@@ -1,0 +1,13 @@
+<div class="container messages">
+    {{#if messages}}
+        {{#each messages}}
+        <div class="container d-flex">
+            <p class="text-danger">
+                <b class="text-primary">{{user}}</b>
+                [{{timestamp}}]:
+                <em class="text-success">{{message}}</em>
+            </p>
+        </div>
+    {{/each}}
+    {{/if}}
+</div>
